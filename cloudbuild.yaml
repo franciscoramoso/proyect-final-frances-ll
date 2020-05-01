@@ -1,13 +1,13 @@
 steps:
-- name: node:14.0.0
+- name: node:10.0.0
   entrypoint: npm
   args: ["install"]
 
-- name: node:14.0.0
+- name: node:10.0.0
   entrypoint: npm
   args: ["cache", "verify"]
 
-- name: node:14.0.0
+- name: node:10.0.0
   entrypoint: npm
   args: ["run", "build"]
 
